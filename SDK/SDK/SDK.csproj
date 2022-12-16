@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="MV" Version="0.9.9" />
+    <PackageReference Include="MV.Ide" Version="0.9.9" />
+    <PackageReference Include="Pla.Lib" Version="1.0.6" />
+    <PackageReference Include="Pla.Lib.UI" Version="1.0.18" />
+    <PackageReference Include="Pla.Win" Version="1.0.6" />
+    <PackageReference Include="Terminal.Gui" Version="1.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Home\Home.csproj" />
+  </ItemGroup>
+	
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1701;1702;NU1701</NoWarn>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn>1701;1702;NU1701</NoWarn>
+	</PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>
